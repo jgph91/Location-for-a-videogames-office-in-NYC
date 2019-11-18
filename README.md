@@ -15,10 +15,10 @@ You recently created a new company in the `GAMING industry`. The company will ha
 - 1 Maintenance guy that loves basketball  
 - 10 Executives  
 - 1 CEO/President  
-​
+
 As a data engineer you have asked all the employees to show their preferences on where to place the new office.  
 Your goal is to place the **new company offices** in the best place for the company to grow.  
-You have to found a place that more or less covers all the following requirements.  
+You have to found a place that more or less covers all the following requirements.
 
 - Designers like to go to design talks and share knowledge. There must be some nearby companies that also do design.  
 - 30% of the company have at least 1 child.  
