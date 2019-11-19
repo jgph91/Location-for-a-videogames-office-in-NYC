@@ -15,8 +15,8 @@ def connectCollection(database, collection):
 #Function for getting coordinates from the office DB
 def getLocation_offices(office,category):
 
-    longitude = office['offices'][0]['longitude']
-    latitude = office['offices'][0]['latitude']
+    longitude = office['offices']['longitude']
+    latitude = office['offices']['latitude']
     loc = {'category':category,
     'type':'Point',
     'coordinates':[float(longitude), float(latitude)]}
