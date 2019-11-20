@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+import time
 import os
 import json
 import requests
@@ -24,8 +25,8 @@ def getLocation_offices(office,category):
 
 #Function for getting coordinates from the Gmaps API
 def getLocation_API(place,category):
-    longitude = place['location']['lng']
-    latitude = place['location']['lat']
+    longitude = place['lng']
+    latitude = place['lat']
     loc = {
         'category':category,
         'type':'Point',
@@ -35,12 +36,22 @@ def getLocation_API(place,category):
 
 #Function to perform google queries
 def google_query(query):
-    coords = []
-    api_key = os.getenv("GOOGLE_TOKEN")
-    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?"
-    r = requests.get(url + 'query=' + query + '&key=' + api_key) 
-    x = r.json() 
-    y = x['results'] 
-    for i in range(len(y)): 
-        coords.append(( y[i]['geometry']))
-    return coords
+    API_key = os.getenv('GOOGLE_TOKEN')
+    endpoint_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
+    places = []
+    params = {
+        'query': query,
+        'key': API_key
+    }
+    res = requests.get(endpoint_url, params = params)
+    results =  json.loads(res.content)
+    places.extend(results['results'])
+    time.sleep(2)
+    while "next_page_token" in results:
+        params['pagetoken'] = results['next_page_token'],
+        res = requests.get(endpoint_url, params = params)
+        results = json.loads(res.content)
+        places.extend(results['results'])
+        time.sleep(2)
+    return places
+
