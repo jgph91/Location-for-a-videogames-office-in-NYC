@@ -4,7 +4,7 @@ The aim of this project is to decide the best location for a video games company
 
 ## Requisites
 
-You recently created a new company in the `GAMING industry`. You have to found a place that more or less covers all the following requirements:  
+You recently created a new company in the `GAMING industry`. You have to found a place in New York, that more or less covers all the following requirements:  
 
 - Designers like to go to design talks and share knowledge. There must be some nearby companies that also do design.  
 - 30% of the company have at least 1 child.  
@@ -18,5 +18,7 @@ You recently created a new company in the `GAMING industry`. You have to found a
 - Google API.ipynb -> coordinates of kindergartens, clubs, vegan food and Starbucks in New York.  
 - PyMongo.ipynb -> coordinates of the offices.  
 - Main.ipynb ->  map showing all the coordinates and the final location for the new office.
-- src/functions.py -> auxiliar functions
+- requirements.txt -> modules required to run the program
+- src -> folder which contains the auxilar functions
+- input -> zip containing the offices info
 ​
