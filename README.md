@@ -1,4 +1,4 @@
-# Mongodb-project "Best location for a video games company"
+# Best location for a video games company in NYC
 
 The aim of this project is to decide the best location for a video games company office taking into account the requisites of bellow.  
 
@@ -37,3 +37,9 @@ This is the best location (40.730610,-73.935242) in New York city for the new of
 - src -> contains the auxilar functions
 - input -> zip containing the offices info
 ​
+## Contact info
+
+If you have any doubt please don't heisitate to contact with me:
+
+- email : jgph91@gmail.com
+- linkedin:  <a href="https://www.linkedin.com/in/javier-gomez-del-pulgar/?locale=en_US">Javier Gómez del Pulgar</a>
