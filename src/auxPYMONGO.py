@@ -1,5 +1,5 @@
-#Function for getting coordinates from the office DB
 def getLocation_offices(office,category):
+    '''Function for getting coordinates from the office DB'''
 
     longitude = office['offices']['longitude']
     latitude = office['offices']['latitude']

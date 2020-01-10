@@ -1,7 +1,8 @@
 from pymongo import MongoClient
 
-# Function for connecting to MongoDB
 def connectCollection(database, collection):
+    '''Function for connecting to MongoDB'''
+
     client = MongoClient()
     db = client[database]
     coll = db[collection]

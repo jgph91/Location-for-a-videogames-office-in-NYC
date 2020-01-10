@@ -3,8 +3,9 @@ import json
 from dotenv import load_dotenv
 load_dotenv()
 
-#Function to perform google queries
 def google_query(query):
+    '''Function to perform google queries'''
+
     API_key = os.getenv('GOOGLE_TOKEN')
     endpoint_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
     places = []
