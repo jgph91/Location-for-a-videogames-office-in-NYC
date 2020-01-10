@@ -4,7 +4,7 @@ The aim of this project is to decide the best location for a video games company
 
 ## Requisites
 
-You recently created a new company in the `GAMING industry`. You have to found a place in New York, that more or less covers all the following requirements:  
+You recently created a new company in the GAMING industry. You have to found a place in New York, that more or less covers all the following requirements:  
 
 - Designers like to go to design talks and share knowledge. There must be some nearby companies that also do design.  
 - 30% of the company have at least 1 child.  
@@ -17,7 +17,7 @@ You recently created a new company in the `GAMING industry`. You have to found a
 
 In order to know the location for the videogames companies of New York city and all the companies older than 10 years old I used the Techcrunch dataset.  
 
-About Starbucks. Kindergartens. CLubs and Vegans I performed the requests to the Gmaps API and then I stored this information in geojsons.  
+About Starbucks. Kindergartens. Clubs and Vegans I performed the requests to the Gmaps API and then I stored this information in geojsons.  
 
 Once all the needed coordinates were collected I created a collection in MongoDB for cleaning the outliers and for getting the best spot fo this office. Finally, for representing the possible spots I used folium library.    
 
@@ -30,12 +30,12 @@ This is the best location (40.730610,-73.935242) in New York city for the new of
 
 ## Files included
 
-- Google API.ipynb -> coordinates of kindergartens, clubs, vegan food and Starbucks in New York.  
-- PyMongo.ipynb -> coordinates of the offices.  
-- Main.ipynb ->  map showing all the coordinates and the   final location for the new office.
-- requirements.txt -> modules required to run the program
-- src -> contains the auxilar functions
-- input -> zip containing the offices info
+- `Google API.ipynb` coordinates of kindergartens, clubs, vegan food and Starbucks in New York.  
+- `PyMongo.ipynb` coordinates of the offices.  
+- `Main.ipynb` map showing all the coordinates and the   final location for the new office.
+- `requirements.txt` modules required to run the program
+- `src` contains the auxilar functions
+- `input` zip containing the offices info
 ​
 ## Contact info
 
