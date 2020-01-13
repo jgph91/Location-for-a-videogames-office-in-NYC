@@ -39,7 +39,7 @@ This is the best location (40.730610,-73.935242) in New York city for the new of
 ​
 ## Contact info
 
-If you have any doubt please don't heisitate to contact with me:
+If you have any doubt please don't heisitate to contact me:
 
 - email : jgph91@gmail.com
 - linkedin:  <a href="https://www.linkedin.com/in/javier-gomez-del-pulgar/?locale=en_US">Javier Gómez del Pulgar</a>
